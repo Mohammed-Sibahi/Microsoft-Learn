@@ -1,0 +1,270 @@
+#logo {
+width: 120px;
+height: 62px;
+margin-left: -7px;
+}
+.vl {
+    border-left: 2px solid black;
+    height: 25px;
+    padding: 10px;
+}
+
+#docs:hover {
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+.dropdown-item {
+    color: #000000;
+}
+#navbarDropdownMenuLink {
+    color: #000000;
+}
+.nav-item {
+  color: #000000;
+}
+.nav-item:hover {
+    text-decoration: underline;
+}
+.navbar {
+    height: 30px;
+    margin: 8px;
+}
+
+
+#learn {
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+#sign-in {
+    color: #106ebe;
+}
+#sign-in:hover {
+    color: #106ebe;
+    text-decoration: underline;
+    background-color: #faf9f8;
+}
+#search {
+    border-color: none;
+}
+#search:hover {
+    border-color: #106ebe;
+}
+.right-inner-addon i {
+    position: absolute;
+    right: 0px;
+    padding: 10px 110px;
+    pointer-events: none;
+}
+#main-image {
+    width: 100%;
+    margin-top: -20px;
+}
+.intro-card {
+    color: white;
+    width: 25rem;
+    height: 300px;
+    background-color: #171717;
+    border-radius: 5px;
+    margin-top: -35px;
+}
+.container-1 {
+    top: 150px;
+    position: absolute;
+    margin-left: 100px;
+
+}
+
+.media-card {
+    margin: 30px;
+    padding: 0px;
+    height: 300px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    font-size: 14px;
+    background-color: white;
+}
+.card-img {
+    height: 300px;
+    margin-left: 0px;
+    padding-left: 0px;
+    
+}
+.page-footer {
+    background-color: #d2d0ce;
+    margin-top: 80px;
+}
+
+.container-2 {
+    margin-left: 100px;
+    top: -200px;
+    position: relative;
+    
+}
+.title {
+    text-align: center;
+   margin-top: -175px;
+}
+.tags {
+    display: inline-block;
+    list-style: none;
+    margin: 2px;
+    padding: 2px;
+    font-size: 14px;
+    background-color: #e1dfdd;
+    color: black;
+}
+.items {
+    margin-left: -45px;
+}
+.time {
+    font-size: 14px;
+}
+.cards {
+    height: 300px;
+    padding: 0px;
+    margin: 35px;
+    
+}
+.card-title {
+    letter-spacing: 2px;
+}
+.card-title-favorite {
+    letter-spacing: 2px;
+    margin-top: 25px;
+    font-size: 12px;
+}
+.main-title {
+    font-size: 16px;
+    
+    color: #0078d4;
+}
+#img-1 {
+    width: 50px;
+  margin-bottom: -50px;
+}
+#img-2 {
+    width: 50px;
+  margin-bottom: -20px;
+}
+.card-header {
+    background-color: #0078d4;
+    height: 60px;
+}
+.card-footer {
+    background-color: white;
+}
+.fa-bookmark {
+margin-right: 30px;
+float: right;
+} 
+.fa-plus-circle {
+    margin-right: 0px;
+    float: right;
+}
+.learning {
+    text-align: center;
+}
+.last-title {
+    text-align: center;
+}
+.favorite {
+    background-color: white;
+}
+.background-image-1 {
+    margin-top: -250px;
+}
+.card-body-favorite {
+    opacity: 100%;
+    
+}
+.background-image-2 {
+    float: right;
+    margin-right: 70px;
+    margin-top: -190px;
+}
+.fa-globe {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#lang {
+    color: black;
+}
+#lang:hover {
+    color: gray;
+}
+#theme  {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#theme:hover  {
+    padding: 10px;
+    margin: 10px;
+    outline-style: solid;
+    text-decoration: none;
+}
+#previous-version  {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#previous-version:hover {
+    color: gray;
+}
+#doc {   
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#doc:hover {
+    color: gray;
+}
+#blog  {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#blog:hover {
+    color: gray;
+}
+#cont  {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#cont:hover {
+    color: gray;
+}
+#privacy {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#privacy:hover {
+    color: gray;
+}
+#use  {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#use:hover {
+    color: gray;
+}
+#feedback  {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#feedback:hover {
+    color: gray;
+}
+#trademarks {
+    color: black;
+    padding: 10px;
+    margin: 10px;
+}
+#trademarks:hover {
+    color: gray;
+}
