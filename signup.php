@@ -32,7 +32,7 @@
 								<label for="check"><span class="icon"></span> Keep me Signed in</label>
 							</div>
 							<div class="group">
-								<input type="submit" class="button" value="Log In">
+								<input type="submit" name="submit" class="button" value="Log In">
 							</div>
 							<div class="hr"></div>
 							<div class="foot-lnk">
