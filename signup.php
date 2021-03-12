@@ -17,7 +17,7 @@
 			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
 			<div class="login-form">
 				<div class="sign-in-htm">
-					<form action="login.inc.php" method="POST">
+					<form action="includes/login.inc.php" method="POST">
 						<div class="group">
 							
 							<input id="user" type="text" class="input" placeholder="Username / Email">
@@ -41,7 +41,7 @@
 				</div>
 				<div class="sign-up-htm">
 
-					<form action="signup.inc.php" method="POST">
+					<form action="includes/signup.inc.php" method="POST">
 						<div class="group">
 							<input id="user" type="text" name="name" class="input" placeholder="Full Name ...">
 						</div>
