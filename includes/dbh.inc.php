@@ -6,7 +6,7 @@ $dBUsername = "root";
 
 $dBPassword = "";
 
-$dBName = "mircosoftlearn";
+$dBName = "microsoftlearn";
 
 
 /*we define a variable $conn and use a mysqli function (mysqli_connect) to make the connection using 
