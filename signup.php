@@ -19,11 +19,11 @@
 				<div class="sign-in-htm">
 					<form action="includes/login.inc.php" method="POST">
 						<div class="group">
-							
+
 							<input id="user" type="text" class="input" placeholder="Username / Email">
 						</div>
 						<div class="group">
-							
+
 							<input id="pass" type="password" class="input" data-type="password" placeholder="Password">
 						</div>
 						<div class="group">
@@ -32,7 +32,7 @@
 						</div>
 						<div class="group">
 							<input type="submit" class="button" value="Log In">
-						</div> 
+						</div>
 						<div class="hr"></div>
 						<div class="foot-lnk">
 							<a href="#forgot">Forgot Password?</a>
@@ -40,36 +40,62 @@
 					</form>
 				</div>
 				<div class="sign-up-htm">
+					<section>
 
-					<form action="includes/signup.inc.php" method="POST">
-						<div class="group">
-							<input id="user" type="text" name="name" class="input" placeholder="Full Name ...">
-						</div>
-						<div class="group">
+						<form action="includes/signup.inc.php" method="POST">
+							<div class="group">
+								<input id="user" type="text" name="name" class="input" placeholder="Full Name ...">
+							</div>
+							<div class="group">
 
-							<input id="user" type="text" name="uid" class="input" placeholder="Username ...">
-						</div>
-						<div class="group">
+								<input id="user" type="text" name="uid" class="input" placeholder="Username ...">
+							</div>
+							<div class="group">
 
-							<input id="pass" type="text" name="email" class="input" placeholder="Email Address ...">
-						</div>
-						<div class="group">
+								<input id="pass" type="text" name="email" class="input" placeholder="Email Address ...">
+							</div>
+							<div class="group">
 
-							<input id="pass" type="password" name="pwd" class="input" data-type="password" placeholder="Password ...">
-						</div>
-						<div class="group">
+								<input id="pass" type="password" name="pwd" class="input" data-type="password" placeholder="Password ...">
+							</div>
+							<div class="group">
 
-							<input id="pass" type="password" name="pwdrepeat" class="input" data-type="password" placeholder="Repeat Password ...">
-						</div>
+								<input id="pass" type="password" name="pwdrepeat" class="input" data-type="password" placeholder="Repeat Password ...">
+							</div>
 
-						<div class="group">
-							<input type="submit" class="button" name="submit" value="Sign Up">
-						</div>
-						<div class="hr"></div>
-						<div class="foot-lnk">
-							<label for="tab-1">Already A Member?</a>
-						</div>
-					</form>
+							<div class="group">
+								<input type="submit" class="button" name="submit" value="Sign Up">
+							</div>
+							<div class="hr"></div>
+							<div class="foot-lnk">
+								<label for="tab-1">Already A Member?</a>
+							</div>
+						</form>
+						<?php
+
+						if (isset($_GET["error"])) {
+							if ($_GET["error"] == "emptyinput") {
+
+								echo "<p style='color:yellow;'>Fill in all fields!</p>";
+							} else if ($_GET["error"] == "invaliduid") {
+								echo "<p style='color:yellow;'>Choose a proper username!</p>";
+							} else if($_GET["error"] == "invalidemail") {
+								echo "<p style='color:yellow;'>Choose a proper email!</p>";
+							} else if ($_GET["error"] == "passwordsdonotmatch") {
+								echo "<p style='color:yellow;'>Passwords do not match!</p>";
+							} else if ($_GET["error"] == "stmtfailed") {
+								echo "<p style='color:yellow;'>Something went wrong. Try again, please!</p>";
+							} else if ($_GET["error"] == "usernametaken") {
+								echo "<p style='color:yellow;'>Username is already taken!</p>";
+							} else if ($_GET["error"] == "none") {
+								echo "<p>You have signed up!</p>";
+							}
+						}
+
+						?>
+
+
+					</section>
 				</div>
 			</div>
 		</div>
