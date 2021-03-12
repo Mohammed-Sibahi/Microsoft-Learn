@@ -17,27 +17,42 @@
 			<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
 			<div class="login-form">
 				<div class="sign-in-htm">
-					<form action="includes/login.inc.php" method="POST">
-						<div class="group">
+					<section>
+						<form action="includes/login.inc.php" method="POST">
+							<div class="group">
 
-							<input id="user" type="text" class="input" placeholder="Username / Email">
-						</div>
-						<div class="group">
+								<input id="user" name="uid" type="text" class="input" placeholder="Username / Email">
+							</div>
+							<div class="group">
 
-							<input id="pass" type="password" class="input" data-type="password" placeholder="Password">
-						</div>
-						<div class="group">
-							<input id="check" type="checkbox" class="check" checked>
-							<label for="check"><span class="icon"></span> Keep me Signed in</label>
-						</div>
-						<div class="group">
-							<input type="submit" class="button" value="Log In">
-						</div>
-						<div class="hr"></div>
-						<div class="foot-lnk">
-							<a href="#forgot">Forgot Password?</a>
-						</div>
-					</form>
+								<input id="pass" name="pwd" type="password" class="input" data-type="password" placeholder="Password">
+							</div>
+							<div class="group">
+								<input id="check" type="checkbox" class="check" checked>
+								<label for="check"><span class="icon"></span> Keep me Signed in</label>
+							</div>
+							<div class="group">
+								<input type="submit" class="button" value="Log In">
+							</div>
+							<div class="hr"></div>
+							<div class="foot-lnk">
+								<a href="#forgot">Forgot Password?</a>
+							</div>
+						</form>
+						<?php
+
+						if (isset($_GET["error"])) {
+							if ($_GET["error"] == "emptyinput") {
+
+								echo "<p style='color:yellow;'>Fill in all fields!</p>";
+							} else if ($_GET["error"] == "wronglogin") {
+								echo "<p style='color:yellow;'>Incorrect login info!</p>";
+							
+							}
+						}
+
+						?>
+					</section>
 				</div>
 				<div class="sign-up-htm">
 					<section>
@@ -79,7 +94,7 @@
 								echo "<p style='color:yellow;'>Fill in all fields!</p>";
 							} else if ($_GET["error"] == "invaliduid") {
 								echo "<p style='color:yellow;'>Choose a proper username!</p>";
-							} else if($_GET["error"] == "invalidemail") {
+							} else if ($_GET["error"] == "invalidemail") {
 								echo "<p style='color:yellow;'>Choose a proper email!</p>";
 							} else if ($_GET["error"] == "passwordsdonotmatch") {
 								echo "<p style='color:yellow;'>Passwords do not match!</p>";
